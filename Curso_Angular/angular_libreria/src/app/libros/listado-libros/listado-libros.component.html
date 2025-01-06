@@ -1,0 +1,112 @@
+<!-- Aqui estamos utilizando pipes -->
+<!-- {{}}: A esto se le llama interpolación, es una forma de mostrar el contenido de una variable en el template. -->
+<!-- |: Este es el operador pipe, se utiliza para aplicar un pipe a una variable. (Alternador) -->
+<!-- Los pipes se pueden encadenar, es decir, se pueden aplicar varios pipes a una variable. -->
+
+<!-- ---- -->
+
+<!-- Directivas: -->
+<!-- 1. for: Es una directiva estructural de Angular que se utiliza para iterar sobre una lista de elementos. -->
+<!-- - *ngFor: Manera clasica -->
+<!-- - @for: Manera moderna -->
+
+<!-- 2. if: Es una directiva estructural de Angular que se utiliza para mostrar u ocultar un elemento en el DOM basado en una condición. -->
+<!-- - *ngIf: Manera clasica -->
+<!-- - @for: Manera moderna -->
+
+<!-- ---- -->
+
+<!-- Properties binding:  -->
+<!-- - ngSrc: Es un atributo de Angular que se utiliza para enlazar una imagen a un elemento HTML. -->
+<!-- - priority: Es un atributo de Angular que se utiliza para priorizar la carga de una imagen. -->
+
+<h3>Implementaciones modernas</h3>
+
+@if (!libros) {
+
+  <!-- El gif se encuentra en la carpeta public. En esta carpeta se almacenan recursos estaticos son accesibles para los usuarios -->
+  <img src="loading.gif" />
+
+} @else if (libros.length === 0) {
+
+  <div> 
+    <p>No la libros disponibles</p>
+  </div>
+
+} @else {
+
+  @for (libro of libros; track $index) {
+    <div class="moderno">
+      <div class="contenedor-libro" style="display: flex; gap: 10px;">
+        <div>
+          <img [src]="libro.portada" alt="Imagen de libro" width="169" height="250">
+          <!-- Esta linea de abajo se utiliza cuando se trata de imagenes estaticas, se remueven las importaciones del script ts -->
+          <!-- <img [ngSrc]="libro.portada" [priority]="$index === 0" alt="Imagen de libro" width="169" height="250"> -->
+        </div>
+        <div style="align-content: center;">
+          <h4>{{$index + 1}}. Libro: {{libro.titulo}}</h4>
+          <ul>
+            <li>
+              <span>Autor: {{libro.autor}}</span>
+            </li>
+            <li>
+              <span>Fecha Lanzamiento: {{libro.fecha | date:"dd-MMMM-yyyy" | uppercase}}</span>
+            </li>
+            <li>
+              <span>Precio: {{libro.precio | currency}}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  }
+
+}
+
+<!-- =========================================================== -->
+
+<!-- <h3>Implemetaciones Clasicas</h3> -->
+
+<!-- <h4>*ngFor</h4> -->
+<!-- <div class="clasico" *ngFor="let libro of libros; let indice = index">
+  <h4>{{indice + 1}}. Libro: {{libro.titulo}}</h4>
+  <ul>
+    <li>
+      <span>Autor: {{libro.autor}}</span>
+    </li>
+    <li>
+      <span>Fecha Lanzamiento: {{libro.fecha | date:"dd-MMMM-yyyy" | uppercase}}</span>
+    </li>
+    <li>
+      <span>Precio: {{libro.precio | currency}}</span>
+    </li>
+  </ul>
+</div> -->
+
+<!-- ---------------------------------------------------------------- -->
+
+<!-- <h4>*ngIf</h4> -->
+<!-- <div *ngIf="!libros">
+  <img src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif" />
+</div>
+
+<div *ngIf="libros?.length === 0">
+  <p>No hay libros disponibles</p>
+</div>
+
+<div *ngIf="libros && libros.length>0">
+  <div class="clasico" *ngFor="let libro of libros; let indice = index">
+    <h4>{{indice + 1}}. Libro: {{libro.titulo}}</h4>
+    <ul>
+      <li>
+        <span>Autor: {{libro.autor}}</span>
+      </li>
+      <li>
+        <span>Fecha Lanzamiento: {{libro.fecha | date:"dd-MMMM-yyyy" | uppercase}}</span>
+      </li>
+      <li>
+        <span>Precio: {{libro.precio | currency}}</span>
+      </li>
+    </ul>
+  </div>
+</div> -->

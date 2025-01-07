@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, numberAttribute } from '@angular/core';
 
 @Component({
   selector: 'app-editar-genero',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './editar-genero.component.css'
 })
 export class EditarGeneroComponent {
+
+  @Input({transform: numberAttribute})
+  idGenero! : number;
 
 }

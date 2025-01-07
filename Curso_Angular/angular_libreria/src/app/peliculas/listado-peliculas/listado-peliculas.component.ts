@@ -25,7 +25,7 @@ import {MatIconModule} from '@angular/material/icon';
   standalone: true,
   // Uso de pipes: Los yo son como funciones que puede recibir parametros y devolver un resultado
   // imports: [RouterOutlet, NgFor, NgIf],
-  imports: [DatePipe, UpperCasePipe, CurrencyPipe, ListadoGenericoComponent, MatButtonModule, MatIconModule],
+  imports: [ListadoGenericoComponent, MatButtonModule, MatIconModule],
   templateUrl: './listado-peliculas.component.html',
   styleUrl: './listado-peliculas.component.css'
 })
@@ -41,18 +41,5 @@ export class ListadoPeliculasComponent {
 
   peliculas !: any[];
 
-  agregarPelicula(){
-    this.peliculas.push({
-        titulo: 'La Roca',
-        fechaLanzamiento: new Date(),
-        precio: 29000.99,
-        poster: ''
-    })
-  }
 
-  removerPelicula(pelicula:any){
-    const indice = this.peliculas.findIndex((peliculaActual: any) => peliculaActual.titulo === pelicula.titulo)
-    this.peliculas.splice(indice, 1)
-  }
-  
 }

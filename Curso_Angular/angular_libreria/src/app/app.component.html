@@ -1,20 +1,33 @@
 <!-- Para propiedades de clases se utiliza (binding Properties) = [libros] -->
 <!-- Para eventos de clases se utiliza (binding events) = () -->
 
-<h1>{{'Cine' | uppercase}}</h1>
+<app-menu></app-menu>
 
-<!-- Aqui ya estamos implementando un comoponente propio, requiere de cierta 
-configuracion en app.componet.ts pero si posicionamos el cursos en el nombre 
-del componente y ctrl + . nos dara la opcion de importar -->
+<div class="contenedor">
+    <!-- Esta etiqueta va de la mano con el archivo app.routes.ts 
+    y la importacion de RouterOutlet en las plantillas de los componentes 
+    (Esto funciona para el ruteo) -->
+    <router-outlet></router-outlet>
+</div>
 
-<h2>En Cartelera</h2>
-<app-listado-peliculas [peliculas]="peliculasDisponibles"></app-listado-peliculas>
 
-<hr>
-<hr>
-<hr>
-<hr>
+<!-- ------------------------------------ -->
 
-<h2>Proximos Estrenos</h2>
-<app-listado-peliculas [peliculas]="peliculasProximamente"></app-listado-peliculas>
+<!-- ANTES -->
+<!-- <div class="contenedor">
+    <h1>{{'Cine' | uppercase}}</h1>
 
+    <app-rating [maximoRating]="5" (votado)="procesarVoto($event)"></app-rating>
+
+    Aqui ya estamos implementando un comoponente propio, requiere de cierta 
+    configuracion en app.componet.ts pero si posicionamos el cursos en el nombre 
+    del componente y ctrl + . nos dara la opcion de importar
+
+    <h2>En Cartelera</h2>
+    <app-listado-peliculas [peliculas]="peliculasDisponibles"></app-listado-peliculas>
+
+    <hr>
+
+    <h2>Proximos Estrenos</h2>
+    <app-listado-peliculas [peliculas]="peliculasProximamente"></app-listado-peliculas>
+</div> -->

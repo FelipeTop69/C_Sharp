@@ -20,9 +20,6 @@
 <!-- - ngSrc: Es un atributo de Angular que se utiliza para enlazar una imagen a un elemento HTML. -->
 <!-- - priority: Es un atributo de Angular que se utiliza para priorizar la carga de una imagen. -->
 
-<button (click)="agregarPelicula()" style="margin: 1rem">
-  Agregar Pelicula
-</button>
 
 <app-listado-generico [listado]="peliculas">  
 
@@ -32,41 +29,61 @@
   </ng-container>
 
   <ng-container contenido>
-    @for (pelicula of peliculas; track $index) {
-      <div class="moderno">
-        <div class="contenedor-libro" style="display: flex; gap: 10px">
-          <div>
+    <div class="peliculas-contenedor">
+      @for (pelicula of peliculas; track $index) {
+        <div class="pelicula-contenedor">
+          <a>
             @if(pelicula.poster){
-                <img [src]="pelicula.poster" alt="Imagen de libro" width="169" height="250"/>
+              <img [src]="pelicula.poster" alt="Imagen de libro" width="169" height="250"/>
               <!-- Esta linea de abajo se utiliza cuando se trata de imagenes estaticas, se remueven las importaciones del script ts -->
               <!-- <img [ngSrc]="libro.portada" [priority]="$index === 0" alt="Imagen de libro" width="169" height="250"> -->
             } @else {
               <img src="default.jpg" alt="Imagen de libro" width="169" height="250" />
             }
-          </div>
-          <div style="align-content: center">
-            <h4>{{ $index + 1 }}. Libro: {{ pelicula.titulo }}</h4>
-            <ul>
-              <li>
-                Fecha Lanzamiento:{{ pelicula.fechaLanzamiento | date : "dd-MMMM-yyyy" | uppercase }}
-              </li>
-              <li>
-                <span>Precio: {{ pelicula.precio | currency }}</span>
-              </li>
-            </ul>
-            <button mat-stroked-button (click)="removerPelicula(pelicula)">
-              <mat-icon>delete_sweep</mat-icon>
-              Remover Pelicula 
-            </button>
+          </a>
+          <p>
+            <a>{{ pelicula.titulo }}</a>
+          </p>
+          <div>
+            <a mat-stroked-button style="border-color: orange;">Editar</a>
+            <button mat-stroked-button type="button" style="border-color: red;">Eliminar</button>
           </div>
         </div>
-      </div>
-    } 
+      } 
+    </div>
   </ng-container>
 </app-listado-generico>
 
 
 
+
+<!-- =========================================================== -->
+
+<!-- ANTES -->
+<!-- @for (pelicula of peliculas; track $index) {
+  <div class="moderno">
+    <div class="contenedor-libro" style="display: flex; gap: 10px">
+      <div>
+        @if(pelicula.poster){
+            <img [src]="pelicula.poster" alt="Imagen de libro" width="169" height="250"/>
+        } @else {
+          <img src="default.jpg" alt="Imagen de libro" width="169" height="250" />
+        }
+      </div>
+      <div style="align-content: center">
+        <h4>{{ $index + 1 }}. Libro: {{ pelicula.titulo }}</h4>
+        <ul>
+          <li>
+            Fecha Lanzamiento:{{ pelicula.fechaLanzamiento | date : "dd-MMMM-yyyy" | uppercase }}
+          </li>
+          <li>
+            <span>Precio: {{ pelicula.precio | currency }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+}  -->
 
 <!-- =========================================================== -->
 

@@ -1,16 +1,20 @@
-<h1>{{'Libreria' | uppercase}}</h1>
+<!-- Para propiedades de clases se utiliza (binding Properties) = [libros] -->
+<!-- Para eventos de clases se utiliza (binding events) = () -->
+
+<h1>{{'Cine' | uppercase}}</h1>
 
 <!-- Aqui ya estamos implementando un comoponente propio, requiere de cierta 
 configuracion en app.componet.ts pero si posicionamos el cursos en el nombre 
 del componente y ctrl + . nos dara la opcion de importar -->
 
-<h2>Disponibles</h2>
-<app-listado-libros></app-listado-libros>
+<h2>En Cartelera</h2>
+<app-listado-peliculas [peliculas]="peliculasDisponibles"></app-listado-peliculas>
 
 <hr>
 <hr>
 <hr>
 <hr>
 
-<h2>En Espera</h2>
-<app-listado-libros></app-listado-libros>
+<h2>Proximos Estrenos</h2>
+<app-listado-peliculas [peliculas]="peliculasProximamente"></app-listado-peliculas>
+

@@ -20,48 +20,53 @@
 <!-- - ngSrc: Es un atributo de Angular que se utiliza para enlazar una imagen a un elemento HTML. -->
 <!-- - priority: Es un atributo de Angular que se utiliza para priorizar la carga de una imagen. -->
 
-<h3>Implementaciones modernas</h3>
+<button (click)="agregarPelicula()" style="margin: 1rem">
+  Agregar Pelicula
+</button>
 
-@if (!libros) {
+<app-listado-generico [listado]="peliculas">  
 
-  <!-- El gif se encuentra en la carpeta public. En esta carpeta se almacenan recursos estaticos son accesibles para los usuarios -->
-  <img src="loading.gif" />
+  <!-- Aqui se esta personalizando la proyeccion -->
+  <ng-container vacio>
+    <p style="color: orange; font-size: large;">No hay elementos disponibles</p>
+  </ng-container>
 
-} @else if (libros.length === 0) {
-
-  <div> 
-    <p>No la libros disponibles</p>
-  </div>
-
-} @else {
-
-  @for (libro of libros; track $index) {
-    <div class="moderno">
-      <div class="contenedor-libro" style="display: flex; gap: 10px;">
-        <div>
-          <img [src]="libro.portada" alt="Imagen de libro" width="169" height="250">
-          <!-- Esta linea de abajo se utiliza cuando se trata de imagenes estaticas, se remueven las importaciones del script ts -->
-          <!-- <img [ngSrc]="libro.portada" [priority]="$index === 0" alt="Imagen de libro" width="169" height="250"> -->
-        </div>
-        <div style="align-content: center;">
-          <h4>{{$index + 1}}. Libro: {{libro.titulo}}</h4>
-          <ul>
-            <li>
-              <span>Autor: {{libro.autor}}</span>
-            </li>
-            <li>
-              <span>Fecha Lanzamiento: {{libro.fecha | date:"dd-MMMM-yyyy" | uppercase}}</span>
-            </li>
-            <li>
-              <span>Precio: {{libro.precio | currency}}</span>
-            </li>
-          </ul>
+  <ng-container contenido>
+    @for (pelicula of peliculas; track $index) {
+      <div class="moderno">
+        <div class="contenedor-libro" style="display: flex; gap: 10px">
+          <div>
+            @if(pelicula.poster){
+                <img [src]="pelicula.poster" alt="Imagen de libro" width="169" height="250"/>
+              <!-- Esta linea de abajo se utiliza cuando se trata de imagenes estaticas, se remueven las importaciones del script ts -->
+              <!-- <img [ngSrc]="libro.portada" [priority]="$index === 0" alt="Imagen de libro" width="169" height="250"> -->
+            } @else {
+              <img src="default.jpg" alt="Imagen de libro" width="169" height="250" />
+            }
+          </div>
+          <div style="align-content: center">
+            <h4>{{ $index + 1 }}. Libro: {{ pelicula.titulo }}</h4>
+            <ul>
+              <li>
+                Fecha Lanzamiento:{{ pelicula.fechaLanzamiento | date : "dd-MMMM-yyyy" | uppercase }}
+              </li>
+              <li>
+                <span>Precio: {{ pelicula.precio | currency }}</span>
+              </li>
+            </ul>
+            <button mat-stroked-button (click)="removerPelicula(pelicula)">
+              <mat-icon>delete_sweep</mat-icon>
+              Remover Pelicula 
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  }
+    } 
+  </ng-container>
+</app-listado-generico>
 
-}
+
+
 
 <!-- =========================================================== -->
 

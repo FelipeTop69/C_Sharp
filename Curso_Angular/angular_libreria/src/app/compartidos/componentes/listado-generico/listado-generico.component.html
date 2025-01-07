@@ -1,0 +1,33 @@
+<!-- Lo que se esta aplicando con esto es Proyeccion -->
+
+@if (!listado) {
+
+    <div #cargandoDiv>
+        <ng-content select="[cargando]"></ng-content>
+    </div>
+
+    <!-- Esto queire decir que si en la plantilla de donde viene la proyeccion (listado-peliculas.component.html)
+    no esta mandando nada en el div con nombre vacion entonces ponga esto por default -->
+    @if (!cargandoDiv.innerHTML.trim()) {
+        <!-- El gif se encuentra en la carpeta public. En esta carpeta se almacenan recursos estaticos son accesibles para los usuarios -->
+        <img src="loading.gif" alt="">
+    }
+
+} @else if (listado.length === 0) {
+
+    <div #vacioDiv>
+        <ng-content select="[vacio]"></ng-content>
+    </div>
+
+    <!-- Esto queire decir que si en la plantilla de donde viene la proyeccion (listado-peliculas.component.html)
+    no esta mandando nada en el div con nombre vacion entonces ponga esto por default -->
+    @if (!vacioDiv.innerHTML.trim()) {
+        <div>
+            <p>No elementos disponibles</p>
+        </div>
+    }
+
+} @else {
+    <!-- select="[contenido]": Es el nombre del contenido a mostrar que viene de listado-peliculas.component.html -->
+    <ng-content select="[contenido]"></ng-content>
+}

@@ -1,3 +1,5 @@
+using LibreriaAPI;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,9 +11,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddOutputCache(opciones =>
 {
-    opciones.DefaultExpirationTimeSpan = TimeSpan.FromSeconds(15);
+    opciones.DefaultExpirationTimeSpan = TimeSpan.FromSeconds(60);
 });
-
 
 var app = builder.Build();
 

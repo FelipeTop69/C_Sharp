@@ -121,6 +121,26 @@
   },
   {
     "ContainingType": "LibreriaAPI.Controllers.GenerosController",
+    "Method": "GetEjemploProConfi",
+    "RelativePath": "api/generos/ejemplo-pro-config",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LibreriaAPI.Controllers.GenerosController",
     "Method": "Get",
     "RelativePath": "api/generos/listado",
     "HttpMethod": "GET",
@@ -138,6 +158,16 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "LibreriaAPI.Controllers.GenerosController",
+    "Method": "GetServicioTiemposVida",
+    "RelativePath": "api/generos/servicios-tiempo-de-vida",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "LibreriaAPI.Controllers.GenerosController",

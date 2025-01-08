@@ -1,6 +1,7 @@
 ﻿using LibreriaAPI.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OutputCaching;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LibreriaAPI.Controllers
 {
@@ -8,66 +9,48 @@ namespace LibreriaAPI.Controllers
     [ApiController]
     public class GenerosController : ControllerBase
     {
+        
+        private readonly IOutputCacheStore outputCacheStore;
+        private const string cacheTag = "generos";
+
+        public GenerosController( IOutputCacheStore outputCachStore) 
+        {
+            this.outputCacheStore = outputCachStore;
+        }
+
         [HttpGet] // api/genero
-        [HttpGet("listado")] // api/genero/listado
-        [HttpGet("/listado-generos")] // api/listado-generos
-        [OutputCache]
+        [OutputCache(Tags = [cacheTag])]
+
         public List<Genero> Get()
         {
-            var repositorio = new RepositorioEnMemoria();
-            var generos = repositorio.ObtenerTodosLosGeneros();
-
-            return generos;
+            return new List<Genero> { new Genero { Id = 1, Nombre = "Comedia" }, 
+                new Genero { Id = 2, Nombre = "Accion" } };
         }
 
         [HttpGet("{id:int}")] // api/generos/69
-        [OutputCache]
+        [OutputCache(Tags = [cacheTag])]
         public async Task<ActionResult<Genero>> Get(int id)
         {
-            var repositorio = new RepositorioEnMemoria();
-            var genero = await repositorio.ObtenerPorId(id);
-
-            if (genero == null)
-            {
-                return NotFound();
-            }
-
-            return genero;
-        }
-
-        [HttpGet("{nombre}")] // api/generos/Samuel
-        public async Task<Genero?> Get(string nombre) //Se esta mandando un valor por defecto a la clase genero
-        {
-            var repositorio = new RepositorioEnMemoria();
-            var genero = await repositorio.ObtenerPorId(1);
-
-            return genero;
+            throw new NotImplementedException();
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Genero genero)
+        public async Task<IActionResult> Post([FromBody] Genero genero)
         {
-            var repositorio = new RepositorioEnMemoria();
-            var yaExisteUnGeneroConDichoNombre = repositorio.Existe(genero.Nombre);
-
-            if (yaExisteUnGeneroConDichoNombre)
-            {
-                return BadRequest($"Ya existe un genero con el nombre {genero.Nombre}");
-            }
-
-            return Ok();
-            
+            throw new NotImplementedException();
         }
 
         [HttpPut]
         public void Put()
         {
+            throw new NotImplementedException();
 
         }
 
         [HttpDelete]
         public void Delete() 
-        { 
+        {
+            throw new NotImplementedException();
 
         }
     }

@@ -6,7 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { RouterLink } from '@angular/router';
 import { InputImgComponent } from '../../compartidos/componentes/input-img/input-img.component';
-import { ActorDTO, ActorCreacionDTO } from '../../actores/actores';
+import { ActorDTO, ActorCreacionDTO, actorAutoCompleteDTO } from '../../actores/actores';
 import { fechaNoFutura } from '../../compartidos/funciones/validaciones';
 import { PeliculasCreacionDTO, PeliculasDTO } from '../peliculas';
 import moment from 'moment';
@@ -39,6 +39,9 @@ export class FormularioPeliculasComponent {
   
   @Input({required: true})
   cinesSeleccionados!: SelectorMultipleDTO[];
+
+  @Input({required: true})
+  actoresSeleccionados!: actorAutoCompleteDTO[];
 
   @Input()
   modelo?: PeliculasDTO;
@@ -79,6 +82,8 @@ export class FormularioPeliculasComponent {
 
     const cinesIds = this.cinesSeleccionados.map(val => val.llave);
     pelicula.cinesIds = cinesIds;
+
+    pelicula.actores = this.actoresSeleccionados;
 
     this.posteoFormulario.emit(pelicula);
 

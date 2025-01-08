@@ -1,16 +1,19 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
 import { ReactiveFormsModule, FormsModule, FormControl } from '@angular/forms';
 import { MatAutocompleteModule, MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatTable, MatTableModule } from '@angular/material/table';
+import {CdkDragDrop, DragDropModule, moveItemInArray} from '@angular/cdk/drag-drop';
 import { actorAutoCompleteDTO } from '../actores';
 
 @Component({
   selector: 'app-autocomplete-actores',
   standalone: true,
-  imports: [MatAutocompleteModule, MatFormFieldModule, ReactiveFormsModule, MatInputModule, FormsModule, MatTableModule, MatIconModule],
+  imports: [MatAutocompleteModule, MatFormFieldModule, ReactiveFormsModule, MatInputModule, FormsModule, MatTableModule, MatIconModule,
+    DragDropModule
+  ],
   templateUrl: './autocomplete-actores.component.html',
   styleUrl: './autocomplete-actores.component.css'
 })
@@ -23,6 +26,7 @@ export class AutocompleteActoresComponent {
     {id: 3, nombre: 'Felipe', personaje: '', foto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/TechCrunch_Disrupt_San_Francisco_2019_-_Day_1_%2848834070763%29_%28cropped%29.jpg/200px-TechCrunch_Disrupt_San_Francisco_2019_-_Day_1_%2848834070763%29_%28cropped%29.jpg'},
   ]
 
+  @Input({required: true})
   actoresSeleccionados: actorAutoCompleteDTO[] = []
 
   columnasAMostrar = ['imagen', 'nombre', 'personaje', 'acciones'];
@@ -36,6 +40,12 @@ export class AutocompleteActoresComponent {
     if (this.table != undefined){
       this.table.renderRows();
     }
+  }
+
+  finalizarArrastre(event: CdkDragDrop<any[]>){
+    const indicePrevio = this.actoresSeleccionados.findIndex(actor => actor === event.item.data);
+    moveItemInArray(this.actoresSeleccionados, indicePrevio, event.currentIndex);
+    this.table.renderRows();
   }
 
   eliminar(actor: actorAutoCompleteDTO){

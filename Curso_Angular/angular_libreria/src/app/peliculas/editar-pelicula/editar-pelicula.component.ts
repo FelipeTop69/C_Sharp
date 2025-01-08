@@ -2,6 +2,7 @@ import { Component, Input, numberAttribute } from '@angular/core';
 import { PeliculasDTO, PeliculasCreacionDTO } from '../peliculas';
 import { FormularioPeliculasComponent } from "../formulario-peliculas/formulario-peliculas.component";
 import { SelectorMultipleDTO } from '../../compartidos/componentes/selector-multiple/selectorMultipleModelo';
+import { actorAutoCompleteDTO } from '../../actores/actores';
 
 
 @Component({
@@ -33,6 +34,10 @@ export class EditarPeliculaComponent {
   cinesNoSeleccionados: SelectorMultipleDTO[] = [
     {llave:1, valor:'Royal Films'},
     {llave:3, valor:'Cie Colombia'},
+  ];
+
+  actoresSeleccionados: actorAutoCompleteDTO[] = [
+    {id: 2, nombre: 'Daniel', personaje: 'X', foto: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Zendaya_-_2019_by_Glenn_Francis.jpg/220px-Zendaya_-_2019_by_Glenn_Francis.jpg'},
   ];
 
   guardarCambios(pelicula: PeliculasCreacionDTO){

@@ -29,10 +29,10 @@ C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\Curso_Angular\LibreriaAPI
 C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\Curso_Angular\LibreriaAPI\LibreriaAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.LibreriaAPI.props
 C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\Curso_Angular\LibreriaAPI\LibreriaAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.LibreriaAPI.props
 C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\Curso_Angular\LibreriaAPI\LibreriaAPI\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\Curso_Angular\LibreriaAPI\LibreriaAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\Curso_Angular\LibreriaAPI\LibreriaAPI\obj\Debug\net9.0\Libreria.728DFB4C.Up2Date
 C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\Curso_Angular\LibreriaAPI\LibreriaAPI\obj\Debug\net9.0\LibreriaAPI.dll
 C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\Curso_Angular\LibreriaAPI\LibreriaAPI\obj\Debug\net9.0\refint\LibreriaAPI.dll
 C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\Curso_Angular\LibreriaAPI\LibreriaAPI\obj\Debug\net9.0\LibreriaAPI.pdb
 C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\Curso_Angular\LibreriaAPI\LibreriaAPI\obj\Debug\net9.0\LibreriaAPI.genruntimeconfig.cache
 C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\Curso_Angular\LibreriaAPI\LibreriaAPI\obj\Debug\net9.0\ref\LibreriaAPI.dll
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\Curso_Angular\LibreriaAPI\LibreriaAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

@@ -40,3 +40,8 @@
 # System files
 /angular_libreria/.DS_Store
 /angular_libreria/Thumbs.db
+
+
+# API Libreria API
+LibreriaAPI/LibreriaAPI/obj/Release/
+LibreriaAPI/LibreriaAPI/.vs/

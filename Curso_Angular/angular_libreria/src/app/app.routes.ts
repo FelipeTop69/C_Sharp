@@ -12,6 +12,7 @@ import { EditarGeneroComponent } from './generos/editar-genero/editar-genero.com
 import { EditarPeliculaComponent } from './peliculas/editar-pelicula/editar-pelicula.component';
 import { EditarActorComponent } from './actores/editar-actor/editar-actor.component';
 import { EditarCineComponent } from './cines/editar-cine/editar-cine.component';
+import { FiltroPeliculasComponent } from './peliculas/filtro-peliculas/filtro-peliculas.component';
 
 export const routes: Routes = [
     {path: '', component: LandingPageComponent},
@@ -28,6 +29,7 @@ export const routes: Routes = [
     {path: 'cines/editar/:idCine', component: EditarCineComponent},
     
     {path: 'peliculas/crear', component: CrearPeliculaComponent},
+    {path: 'peliculas/filtrar', component: FiltroPeliculasComponent},
     {path: 'peliculas/editar/:idPelicula', component: EditarPeliculaComponent},
 
     // Atrapalo Todo(Debe ir siempre al final debido a que el servicio busca las rutas en cascada)

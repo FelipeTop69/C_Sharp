@@ -11,11 +11,13 @@ namespace LibreriaAPI.Controllers
     {
         
         private readonly IOutputCacheStore outputCacheStore;
+        private readonly ApplicationDbContext context;
         private const string cacheTag = "generos";
 
-        public GenerosController( IOutputCacheStore outputCachStore) 
+        public GenerosController( IOutputCacheStore outputCachStore, ApplicationDbContext context) 
         {
             this.outputCacheStore = outputCachStore;
+            this.context = context;
         }
 
         [HttpGet] // api/genero
@@ -27,7 +29,7 @@ namespace LibreriaAPI.Controllers
                 new Genero { Id = 2, Nombre = "Accion" } };
         }
 
-        [HttpGet("{id:int}")] // api/generos/69
+        [HttpGet("{id:int}", Name = "ObtenerGeneroPorId")] // api/generos/69
         [OutputCache(Tags = [cacheTag])]
         public async Task<ActionResult<Genero>> Get(int id)
         {
@@ -37,7 +39,9 @@ namespace LibreriaAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Genero genero)
         {
-            throw new NotImplementedException();
+            context.Add(genero);
+            await context.SaveChangesAsync();
+            return CreatedAtRoute("ObtenerGeneroPorId", new { id = genero.Id }, genero);
         }
 
         [HttpPut]

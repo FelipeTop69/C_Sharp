@@ -1,4 +1,5 @@
 using LibreriaAPI;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,9 +10,22 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<ApplicationDbContext>(opciones => 
+    opciones.UseSqlServer("name=DefaultConnection"));
+
 builder.Services.AddOutputCache(opciones =>
 {
     opciones.DefaultExpirationTimeSpan = TimeSpan.FromSeconds(60);
+});
+
+var origenesPermitidos = builder.Configuration.GetValue<string>("origenesPermitidos")!.Split(',');
+
+builder.Services.AddCors(opciones =>
+{
+    opciones.AddDefaultPolicy(opcionesCORS =>
+    {
+        opcionesCORS.WithOrigins(origenesPermitidos).AllowAnyMethod().AllowAnyHeader();
+    });
 });
 
 var app = builder.Build();
@@ -24,6 +38,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors();
 
 app.UseOutputCache();
 

@@ -6,6 +6,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { provideMomentDateAdapter } from '@angular/material-moment-adapter';
 import { FormularioActoresComponent } from './actores/formulario-actores/formulario-actores.component';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -25,7 +26,8 @@ export const appConfig: ApplicationConfig = {
         dateA11yLabel: 'LL',
         monthYearA11yLabel: 'MMMM YYYY'
       }
-    })
+    }),
+    provideHttpClient(withFetch())
   ]
 };
 

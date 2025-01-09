@@ -6,6 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { Router, RouterLink } from '@angular/router';
 import { FormularioGeneroComponent } from "../formulario-genero/formulario-genero.component";
 import { GeneroCreacionDTO } from '../generos';
+import { GenerosService } from '../generos.service';
 
 @Component({
   selector: 'app-crear-generos',
@@ -21,14 +22,16 @@ export class CrearGenerosComponent {
   // necesitamos instanciar la clase, pero en angular no es necesario construir esta instancia,
   // con la linea de abajo ya queda instanciada la clase y podemos usar el servicio de ruteo. 
   private router = inject(Router); // A esto se le conoce como Inyeccion de Dependencias para uso de servicios
-
+  private generosService = inject(GenerosService);
 
   guardarCambios(genero: GeneroCreacionDTO){
     // Asi es la sintaxis para usar el servicio de ruteo
     // Redirige al usuario a la ruta '/generos' utilizando el servicio de ruteo de Angular.
     // this.router.navigate(['/generos'])
 
-    console.log('Creando el genero', genero);
+    this.generosService.crear(genero).subscribe(() => {
+      this.router.navigate(['/generos']);
+    });
 
   }
 

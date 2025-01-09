@@ -44,7 +44,17 @@ namespace LibreriaAPI.Controllers
         [OutputCache(Tags = [cacheTag])]
         public async Task<ActionResult<GeneroDTO>> Get(int id)
         {
-            throw new NotImplementedException();
+            var genero = await context.Generos
+                .ProjectTo<GeneroDTO>(mapper.ConfigurationProvider)
+                .FirstOrDefaultAsync(g => g.Id == id);
+
+            if(genero == null)
+            {
+                return NotFound();
+            }
+
+            return genero;
+
         }
 
         [HttpPost]
@@ -53,14 +63,28 @@ namespace LibreriaAPI.Controllers
             var genero = mapper.Map<Genero>(generoCreacionDTO);
             context.Add(genero);
             await context.SaveChangesAsync();
+            await outputCacheStore.EvictByTagAsync(cacheTag, default);
             return CreatedAtRoute("ObtenerGeneroPorId", new { id = genero.Id }, genero);
         }
 
-        [HttpPut]
-        public void Put()
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Put(int id, [FromBody] GeneroCreacionDTO generoCreacionDTO)
         {
-            throw new NotImplementedException();
+            var generoExiste = await context.Generos.AnyAsync(g => g.Id == id);
 
+            if (!generoExiste)
+            {
+                return NotFound();
+            }
+
+            var genero = mapper.Map<Genero>(generoCreacionDTO);
+            genero.Id = id;
+
+            context.Update(genero);
+            await context.SaveChangesAsync();
+            await outputCacheStore.EvictByTagAsync(cacheTag, default);
+
+            return NoContent();
         }
 
         [HttpDelete]

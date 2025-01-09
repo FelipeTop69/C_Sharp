@@ -6,10 +6,21 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "Pagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "RecordsPorPagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[LibreriaAPI.Entidades.Genero, LibreriaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[LibreriaAPI.DTOs.GeneroDTO, LibreriaAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -28,8 +39,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "genero",
-        "Type": "LibreriaAPI.Entidades.Genero",
+        "Name": "generoCreacionDTO",
+        "Type": "LibreriaAPI.DTOs.GeneroCreacionDTO",
         "IsRequired": true
       }
     ],
@@ -83,7 +94,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LibreriaAPI.Entidades.Genero",
+        "Type": "LibreriaAPI.DTOs.GeneroDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\actores\\69a73043-e2c4-401a-9475-c4f5cc7b2e69.jpg",
+      "PackagePath": "staticwebassets\\actores\\69a73043-e2c4-401a-9475-c4f5cc7b2e69.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\actores\\bbd45c3c-4278-4c1b-9d3e-bbbcb3082ac8.jpg",
+      "PackagePath": "staticwebassets\\actores\\bbd45c3c-4278-4c1b-9d3e-bbbcb3082ac8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\actores\\cfb331dd-f294-4824-83b6-40d7c5f550d7.jpg",
+      "PackagePath": "staticwebassets\\actores\\cfb331dd-f294-4824-83b6-40d7c5f550d7.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.LibreriaAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.LibreriaAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.LibreriaAPI.props",
+      "PackagePath": "build\\LibreriaAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.LibreriaAPI.props",
+      "PackagePath": "buildMultiTargeting\\LibreriaAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.LibreriaAPI.props",
+      "PackagePath": "buildTransitive\\LibreriaAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

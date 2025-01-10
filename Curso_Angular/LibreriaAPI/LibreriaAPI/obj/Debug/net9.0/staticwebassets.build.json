@@ -1,12 +1,331 @@
 {
   "Version": 1,
-  "Hash": "UEVA5exWGWTO37sQSk3LwUcV4TNyjsPpVsquhqQW3pk=",
+  "Hash": "QVkkyLNVUQSicQAVwok4pj79vdpBLK/jgIHTI5h9Vpw=",
   "Source": "LibreriaAPI",
   "BasePath": "_content/LibreriaAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "LibreriaAPI\\wwwroot",
+      "Source": "LibreriaAPI",
+      "ContentRoot": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\",
+      "BasePath": "_content/LibreriaAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\actores\\69a73043-e2c4-401a-9475-c4f5cc7b2e69.jpg",
+      "SourceId": "LibreriaAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\",
+      "BasePath": "_content/LibreriaAPI",
+      "RelativePath": "actores/69a73043-e2c4-401a-9475-c4f5cc7b2e69#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kzgmvhzahj",
+      "Integrity": "gBIKdp0VymNKHSCzt9hWrKc7XB1cFayWlg9IU0hrRac=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\actores\\69a73043-e2c4-401a-9475-c4f5cc7b2e69.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\actores\\bbd45c3c-4278-4c1b-9d3e-bbbcb3082ac8.jpg",
+      "SourceId": "LibreriaAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\",
+      "BasePath": "_content/LibreriaAPI",
+      "RelativePath": "actores/bbd45c3c-4278-4c1b-9d3e-bbbcb3082ac8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l4om4ozh70",
+      "Integrity": "pXcuA+JrfdMPjHDe+TIuphN5THtTONp60XMGH3GAMiE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\actores\\bbd45c3c-4278-4c1b-9d3e-bbbcb3082ac8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\actores\\cfb331dd-f294-4824-83b6-40d7c5f550d7.jpg",
+      "SourceId": "LibreriaAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\",
+      "BasePath": "_content/LibreriaAPI",
+      "RelativePath": "actores/cfb331dd-f294-4824-83b6-40d7c5f550d7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kzgmvhzahj",
+      "Integrity": "gBIKdp0VymNKHSCzt9hWrKc7XB1cFayWlg9IU0hrRac=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\actores\\cfb331dd-f294-4824-83b6-40d7c5f550d7.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "actores/69a73043-e2c4-401a-9475-c4f5cc7b2e69.jpg",
+      "AssetFile": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\actores\\69a73043-e2c4-401a-9475-c4f5cc7b2e69.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBIKdp0VymNKHSCzt9hWrKc7XB1cFayWlg9IU0hrRac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 09:53:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBIKdp0VymNKHSCzt9hWrKc7XB1cFayWlg9IU0hrRac="
+        }
+      ]
+    },
+    {
+      "Route": "actores/69a73043-e2c4-401a-9475-c4f5cc7b2e69.kzgmvhzahj.jpg",
+      "AssetFile": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\actores\\69a73043-e2c4-401a-9475-c4f5cc7b2e69.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBIKdp0VymNKHSCzt9hWrKc7XB1cFayWlg9IU0hrRac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 09:53:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kzgmvhzahj"
+        },
+        {
+          "Name": "label",
+          "Value": "actores/69a73043-e2c4-401a-9475-c4f5cc7b2e69.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBIKdp0VymNKHSCzt9hWrKc7XB1cFayWlg9IU0hrRac="
+        }
+      ]
+    },
+    {
+      "Route": "actores/bbd45c3c-4278-4c1b-9d3e-bbbcb3082ac8.jpg",
+      "AssetFile": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\actores\\bbd45c3c-4278-4c1b-9d3e-bbbcb3082ac8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pXcuA+JrfdMPjHDe+TIuphN5THtTONp60XMGH3GAMiE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 09:48:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pXcuA+JrfdMPjHDe+TIuphN5THtTONp60XMGH3GAMiE="
+        }
+      ]
+    },
+    {
+      "Route": "actores/bbd45c3c-4278-4c1b-9d3e-bbbcb3082ac8.l4om4ozh70.jpg",
+      "AssetFile": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\actores\\bbd45c3c-4278-4c1b-9d3e-bbbcb3082ac8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pXcuA+JrfdMPjHDe+TIuphN5THtTONp60XMGH3GAMiE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 09:48:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l4om4ozh70"
+        },
+        {
+          "Name": "label",
+          "Value": "actores/bbd45c3c-4278-4c1b-9d3e-bbbcb3082ac8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pXcuA+JrfdMPjHDe+TIuphN5THtTONp60XMGH3GAMiE="
+        }
+      ]
+    },
+    {
+      "Route": "actores/cfb331dd-f294-4824-83b6-40d7c5f550d7.jpg",
+      "AssetFile": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\actores\\cfb331dd-f294-4824-83b6-40d7c5f550d7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBIKdp0VymNKHSCzt9hWrKc7XB1cFayWlg9IU0hrRac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 08:55:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBIKdp0VymNKHSCzt9hWrKc7XB1cFayWlg9IU0hrRac="
+        }
+      ]
+    },
+    {
+      "Route": "actores/cfb331dd-f294-4824-83b6-40d7c5f550d7.kzgmvhzahj.jpg",
+      "AssetFile": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\wwwroot\\actores\\cfb331dd-f294-4824-83b6-40d7c5f550d7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBIKdp0VymNKHSCzt9hWrKc7XB1cFayWlg9IU0hrRac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 08:55:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kzgmvhzahj"
+        },
+        {
+          "Name": "label",
+          "Value": "actores/cfb331dd-f294-4824-83b6-40d7c5f550d7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBIKdp0VymNKHSCzt9hWrKc7XB1cFayWlg9IU0hrRac="
+        }
+      ]
+    }
+  ]
 }

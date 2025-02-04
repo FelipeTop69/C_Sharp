@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using WebAPI;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,6 +18,9 @@ builder.Services.AddCors(opciones =>
         opcionesCORS.WithOrigins(origenesPermitidos).AllowAnyMethod().AllowAnyHeader();
     });
 });
+
+builder.Services.AddDbContext<AplicationDbContext>(opciones =>
+    opciones.UseSqlServer("name=DefaultConnection"));
 
 var app = builder.Build();
 

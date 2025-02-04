@@ -1,5 +1,4 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-**/.vscode/*
 
 # Compiled output
 Curso_Angular/angular_libreria/dist
@@ -39,11 +38,11 @@ Curso_Angular/angular_libreria/.settings//.settings/
 Curso_Angular/angular_libreria/*.sublime-workspace/*.sublime-workspace
 
 # Visual Studio Code
-Curso_Angular/angular_libreria/.vscode/*
+Curso_Angular/angular_libreria/.vscode/
 !Curso_Angular/angular_libreria/.vscode/settings.json
-!Curso_Angular/angular_libreria/.vscode/tasks.json
-!Curso_Angular/angular_libreria/.vscode/launch.json
-!Curso_Angular/angular_libreria/.vscode/extensions.json
+# !Curso_Angular/angular_libreria/.vscode/tasks.json
+# !Curso_Angular/angular_libreria/.vscode/launch.json
+# !Curso_Angular/angular_libreria/.vscode/extensions.json
 Curso_Angular/angular_libreria/.history/*
 
 .Net_Angular/App_Angular/.vscode/*

@@ -6,26 +6,22 @@ import { MatInputModule } from '@angular/material/input';
 import { Router, RouterLink } from '@angular/router';
 import { LaptopService } from '../laptop.service';
 import { LaptopCreacion } from '../laptop.models';
+import { FormularioProductoComponent } from "../formulario-producto/formulario-producto.component";
 
 
 @Component({
   selector: 'app-crear-producto',
   standalone: true,
-  imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, RouterLink],
+  imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, RouterLink, FormularioProductoComponent],
   templateUrl: './crear-producto.component.html',
   styleUrl: './crear-producto.component.css'
 })
 export class CrearProductoComponent {
-  private readonly formBuilder = inject(FormBuilder);
-  laptopService = inject(LaptopService)
   router = inject(Router);
+  laptopService = inject(LaptopService)
 
-  form = this.formBuilder.group({
-    nombre: [''], 
-  })
 
-  guardarCambios(){
-    let laptop = this.form.value as LaptopCreacion
+  guardarCambios(laptop: LaptopCreacion){
     this.laptopService.crear(laptop).subscribe(() =>{
       this.router.navigate(["productos"]);
     });

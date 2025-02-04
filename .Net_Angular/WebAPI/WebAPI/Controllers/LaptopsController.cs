@@ -53,9 +53,9 @@ namespace WebAPI.Controllers
                 return NotFound();
             }
 
+            laptop.Id = id;
             context.Update(laptop);
             await context.SaveChangesAsync();
-           
             return NoContent();
         }
 

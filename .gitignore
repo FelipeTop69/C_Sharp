@@ -45,11 +45,11 @@ Curso_Angular/angular_libreria/.vscode/
 # !Curso_Angular/angular_libreria/.vscode/extensions.json
 Curso_Angular/angular_libreria/.history/*
 
-.Net_Angular/App_Angular/.vscode/*
+.Net_Angular/App_Angular/.vscode/
 !.Net_Angular/App_Angular/.vscode/settings.json
-!.Net_Angular/App_Angular/.vscode/tasks.json
-!.Net_Angular/App_Angular/.vscode/launch.json
-!.Net_Angular/App_Angular/.vscode/extensions.json
+# !.Net_Angular/App_Angular/.vscode/tasks.json
+# !.Net_Angular/App_Angular/.vscode/launch.json
+# !.Net_Angular/App_Angular/.vscode/extensions.json
 .Net_Angular/App_Angular/.history/*
 
 # Miscellaneous

@@ -33,3 +33,38 @@ C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net y Angular\WebAPI\Web
 C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net y Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.pdb
 C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net y Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.genruntimeconfig.cache
 C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net y Angular\WebAPI\WebAPI\obj\Debug\net9.0\ref\WebAPI.dll
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\bin\Debug\net9.0\appsettings.json
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\bin\Debug\net9.0\WebAPI.staticwebassets.endpoints.json
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\bin\Debug\net9.0\WebAPI.exe
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\bin\Debug\net9.0\WebAPI.deps.json
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\bin\Debug\net9.0\WebAPI.runtimeconfig.json
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\bin\Debug\net9.0\WebAPI.dll
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\bin\Debug\net9.0\WebAPI.pdb
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.csproj.AssemblyReference.cache
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.AssemblyInfo.cs
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.sourcelink.json
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\scopedcss\bundle\WebAPI.styles.css
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\staticwebassets\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\staticwebassets\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\staticwebassets\msbuild.build.WebAPI.props
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.WebAPI.props
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.WebAPI.props
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.csproj.Up2Date
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.dll
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\refint\WebAPI.dll
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.pdb
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\WebAPI.genruntimeconfig.cache
+C:\Users\pipea\OneDrive\Escritorio\Repo Felipe\C_Chart\.Net_Angular\WebAPI\WebAPI\obj\Debug\net9.0\ref\WebAPI.dll

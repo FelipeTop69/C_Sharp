@@ -1,0 +1,89 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+**/.vscode/*
+
+# Compiled output
+Curso_Angular/angular_libreria/dist
+Curso_Angular/angular_libreria/tmp
+Curso_Angular/angular_libreria/out-tsc
+Curso_Angular/angular_libreria/bazel-out
+
+.Net_Angular/App_Angular/dist
+.Net_Angular/App_Angular/tmp
+.Net_Angular/App_Angular/out-tsc
+.Net_Angular/App_Angular/bazel-out
+
+# Node
+Curso_Angular/angular_libreria/node_modules
+Curso_Angular/angular_libreria/npm-debug.log
+Curso_Angular/angular_libreria/yarn-error.log
+
+.Net_Angular/App_Angular/node_modules
+.Net_Angular/App_Angular/npm-debug.log
+.Net_Angular/App_Angular/yarn-error.log
+
+# IDEs and editors
+Curso_Angular/angular_libreria/.idea/
+Curso_Angular/angular_libreria/.project
+Curso_Angular/angular_libreria/.classpath
+Curso_Angular/angular_libreria/.c9/
+Curso_Angular/angular_libreria/*.launch
+Curso_Angular/angular_libreria/.settings/
+Curso_Angular/angular_libreria/*.sublime-workspace
+
+Curso_Angular/angular_libreria/.idea//.idea/
+Curso_Angular/angular_libreria/.project/.project
+Curso_Angular/angular_libreria/.classpath/.classpath
+Curso_Angular/angular_libreria/.c9//.c9/
+Curso_Angular/angular_libreria/*.launch/*.launch
+Curso_Angular/angular_libreria/.settings//.settings/
+Curso_Angular/angular_libreria/*.sublime-workspace/*.sublime-workspace
+
+# Visual Studio Code
+Curso_Angular/angular_libreria/.vscode/*
+!Curso_Angular/angular_libreria/.vscode/settings.json
+!Curso_Angular/angular_libreria/.vscode/tasks.json
+!Curso_Angular/angular_libreria/.vscode/launch.json
+!Curso_Angular/angular_libreria/.vscode/extensions.json
+Curso_Angular/angular_libreria/.history/*
+
+.Net_Angular/App_Angular/.vscode/*
+!.Net_Angular/App_Angular/.vscode/settings.json
+!.Net_Angular/App_Angular/.vscode/tasks.json
+!.Net_Angular/App_Angular/.vscode/launch.json
+!.Net_Angular/App_Angular/.vscode/extensions.json
+.Net_Angular/App_Angular/.history/*
+
+# Miscellaneous
+Curso_Angular/angular_libreria/.angular/cache
+Curso_Angular/angular_libreria/.sass-cache/
+Curso_Angular/angular_libreria/connect.lock
+Curso_Angular/angular_libreria/coverage
+Curso_Angular/angular_libreria/libpeerconnection.log
+Curso_Angular/angular_libreria/testem.log
+Curso_Angular/angular_libreria/typings
+
+.Net_Angular/App_Angular/.angular/cache
+.Net_Angular/App_Angular/.sass-cache/
+.Net_Angular/App_Angular/connect.lock
+.Net_Angular/App_Angular/coverage
+.Net_Angular/App_Angular/libpeerconnection.log
+.Net_Angular/App_Angular/testem.log
+.Net_Angular/App_Angular/typings
+
+# System files
+Curso_Angular/angular_libreria/.DS_Store
+Curso_Angular/angular_libreria/Thumbs.db
+
+.Net_Angular/App_Angular/.DS_Store
+.Net_Angular/App_Angular/Thumbs.db
+
+
+# API Libreria API
+Curso_Angular/LibreriaAPI/LibreriaAPI/obj/Release/
+Curso_Angular/LibreriaAPI/LibreriaAPI/.vs/
+Curso_Angular/LibreriaAPI/.vs/
+
+# API WEV API
+.Net_Angular/WebAPI/WebAPI/obj/Release/
+.Net_Angular/WebAPI/WebAPI/.vs/
+.Net_Angular/WebAPI/.vs/

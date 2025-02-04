@@ -24,7 +24,14 @@ export class CrearGenerosComponent {
   // app.routes.ts (El Ruteador es un servicio) pero si usando su clase. Para hacer esto 
   // necesitamos instanciar la clase, pero en angular no es necesario construir esta instancia,
   // con la linea de abajo ya queda instanciada la clase y podemos usar el servicio de ruteo. 
+  private router = inject(Router)
   private generosService = inject(GenerosService);
   errores: string[] = [];
+
+  guardarCambios(genero: GeneroCreacionDTO){
+    this.generosService.crear(genero).subscribe(()=>{
+      this.router.navigate(['/generos'])
+    })
+  }
 
 }

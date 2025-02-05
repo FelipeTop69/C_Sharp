@@ -4,10 +4,14 @@
     <mat-form-field appearance="outline">
         <mat-label>Nombre</mat-label>
         <input matInput [formControl]="form.controls.nombre">
+        <mat-error>{{obtenerErrorCampoNombre()}}</mat-error>
+        @if (form.controls.nombre.pending) {
+            <mat-spinner matSuffix [diameter]="16" style="margin-right: 1rem;"></mat-spinner>
+        }
     </mat-form-field>
 
     <div>
-        <button mat-flat-button type="submit">Guardar Cambios</button>
+        <button mat-flat-button [disabled]="form.invalid || form.pending" type="submit">Guardar Cambios</button>
 
         <a mat-stroked-button routerLink="/productos">Cancelar</a>
     </div>

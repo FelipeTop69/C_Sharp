@@ -5,6 +5,7 @@ using WebAPI.Entidades;
 namespace WebAPI.Controllers
 {
     [Route("api/laptops")]
+    [ApiController]
     public class LaptopsController : ControllerBase
     {
         private readonly AplicationDbContext context;
@@ -18,6 +19,21 @@ namespace WebAPI.Controllers
         {
             return await context.Laptops.ToListAsync();
         }
+
+        [HttpGet("{nombre}/existe")]
+        public async Task<ActionResult<bool>> ExisteLaptopConNombre(string nombre, int id)
+        {
+            await Task.Delay(3000);
+            if (id == 0)
+            {
+                return await context.Laptops.AnyAsync(x => x.Nombre == nombre);
+            }
+            else
+            {
+                return await context.Laptops.AnyAsync(x => x.Nombre == nombre && x.Id != id);
+            }
+        }
+
 
         [HttpGet("{id:int}", Name = "ObtenerLaptopPorId")]
         public async Task<ActionResult<Laptop>> Get(int id)
@@ -34,9 +50,17 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<CreatedAtRouteResult> Post([FromBody] Laptop laptop)
+        public async Task<IActionResult> Post([FromBody] Laptop laptop)
         {
-           
+            var nombreExiste = await context.Laptops.AnyAsync(x => x.Nombre == laptop.Nombre);
+
+            if (nombreExiste)
+            {
+                var msgError = $"Ya existe una laptop con el nombre {laptop.Nombre}";
+                ModelState.AddModelError(nameof(laptop.Nombre), msgError);
+                return ValidationProblem(ModelState);
+            }
+
             context.Add(laptop);
             await context.SaveChangesAsync();
 
@@ -52,6 +76,16 @@ namespace WebAPI.Controllers
             {
                 return NotFound();
             }
+
+            var nombreExiste = await context.Laptops.AnyAsync(x => x.Nombre == laptop.Nombre && x.Id != id);
+
+            if (nombreExiste)
+            {
+                var msgError = $"Ya existe una laptop con el nombre {laptop.Nombre}";
+                ModelState.AddModelError(nameof(laptop.Nombre), msgError);
+                return ValidationProblem(ModelState);
+            }
+
 
             laptop.Id = id;
             context.Update(laptop);

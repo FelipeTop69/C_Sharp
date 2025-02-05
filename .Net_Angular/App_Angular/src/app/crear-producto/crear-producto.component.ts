@@ -7,23 +7,34 @@ import { Router, RouterLink } from '@angular/router';
 import { LaptopService } from '../laptop.service';
 import { LaptopCreacion } from '../laptop.models';
 import { FormularioProductoComponent } from "../formulario-producto/formulario-producto.component";
+import { extraerErrores } from '../compartidos/funciones/extraerErrores';
+import { MostrarErroresComponent } from "../compartidos/componentes/mostrar-errores/mostrar-errores.component";
 
 
 @Component({
   selector: 'app-crear-producto',
   standalone: true,
-  imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, RouterLink, FormularioProductoComponent],
+  // Se quito el RouterLink
+  imports: [ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, FormularioProductoComponent, MostrarErroresComponent],
   templateUrl: './crear-producto.component.html',
   styleUrl: './crear-producto.component.css'
 })
 export class CrearProductoComponent {
   router = inject(Router);
   laptopService = inject(LaptopService)
+  errores: string[] = [];
 
 
   guardarCambios(laptop: LaptopCreacion){
-    this.laptopService.crear(laptop).subscribe(() =>{
-      this.router.navigate(["productos"]);
+    this.laptopService.crear(laptop).subscribe({
+      next: () =>{
+        this.router.navigate(["productos"]);
+      },
+      error: err =>{
+        const errores = extraerErrores(err);
+        this.errores = errores;
+      }
+      
     });
   }
 

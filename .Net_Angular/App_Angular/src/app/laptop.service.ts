@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { environment } from '../environments/environment';
 import { Laptop, LaptopCreacion } from './laptop.models';
@@ -20,6 +20,12 @@ export class LaptopService {
 
   public obtenerPorId(id: number): Observable<Laptop>{
     return this.http.get<Laptop>(`${this.URLbase}/${id}`);
+  }
+
+  public existePorNombre(nombre: string, id: string): Observable<boolean>{
+    let params = new HttpParams();
+    params = params.append('id', id)
+    return this.http.get<boolean>(`${this.URLbase}/${nombre}/existe`, {params});
   }
 
   public crear(laptop: LaptopCreacion){

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
 using WebAPI;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,7 +29,16 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+
+    // Configura la interfaz de Scalar
+    app.MapScalarApiReference(options =>
+    {
+        options.WithTitle("Mi API .NET 9")
+               .WithTheme(ScalarTheme.BluePlanet) // Puedes elegir temas como Solarized, BluePlanet, etc.
+               .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);
+    });
 }
+
 
 app.UseHttpsRedirection();
 

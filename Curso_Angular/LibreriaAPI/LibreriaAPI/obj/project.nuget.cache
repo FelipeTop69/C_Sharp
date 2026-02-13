@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Izon11/MqQI=",
+  "dgSpecHash": "Z/uuUIwjDgI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pipea\\OneDrive\\Escritorio\\Repo Felipe\\C_Chart\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\LibreriaAPI.csproj",
+  "projectFilePath": "C:\\Users\\pipea\\OneDrive\\Escritorio\\C_Sharp\\Curso_Angular\\LibreriaAPI\\LibreriaAPI\\LibreriaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pipea\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\pipea\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
